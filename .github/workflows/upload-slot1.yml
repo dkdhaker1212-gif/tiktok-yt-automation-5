@@ -1,8 +1,8 @@
-name: "Channel 5 - Daily Upload SLOT 1 (16:00 UTC / 12 PM ET)"
+name: "Channel 5 - Daily Upload (23:00 UTC / 7 PM ET)"
 
 on:
   schedule:
-    - cron: "0 16 * * *"      # 16:00 UTC daily = 12:00 PM US Eastern (US midday); 9:30 PM IST
+    - cron: "0 23 * * *"      # 23:00 UTC daily = 7:00 PM US Eastern (US evening prime); 4:30 AM IST
   workflow_dispatch:
     inputs:
       channel:

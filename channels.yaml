@@ -1,0 +1,61 @@
+# THE channel config. Loaded and validated by src/config.py.
+# One entry per channel. This repo hosts exactly one.
+
+channels:
+  - id: channel_5                         # unique; used in DB, logs, secret names
+    tiktok_username: "fc45ac22"           # no @  -- axe / knife throwing, target trick shots
+    youtube_channel_name: "Axe Factor"
+    owner_email: "REPLACE_WITH_CHANNEL5_GMAIL"
+
+    google_credentials_file: "credentials/channel_5_client_secret.json"
+    oauth_token_file: "tokens/channel_5_token.json"
+
+    videos_per_day: 2
+    description_footer: ""
+    default_tags: [axe throwing, knife throwing, trick shot, axe throw, bullseye,
+                   satisfying, target practice, sharp, throwing axe, hatchet,
+                   axe throwing league, backyard, skills, oddly satisfying,
+                   throwing knife, aim, lumberjack, first try]
+    youtube_category_id: "17"             # 17 Sports
+    enabled: true
+    max_retry_days: 7
+    shorts_max_seconds: 180
+    upload_mode: short_only               # newest unposted first
+    max_download_candidates: 20
+
+    use_ai_seo: true
+    edit:
+      enabled: true
+      zoom_crop_pct: 2.0
+      speed: 1.03
+      hflip: false
+      fade_seconds: 0.25
+      sharpen: true
+      denoise: false
+      saturation: 1.05
+      contrast: 1.05
+      loudnorm: true
+      volume_gain_db: 0.0
+      blur_regions: []
+      brand_overlay:                     # small corner mark = the channel's own logo
+        enabled: true
+        image: "assets/brand_badge.png"
+        corner: tr
+        width_pct: 10
+        margin_pct: 3
+        opacity: 0.92
+
+    thumbnail:
+      enabled: true
+      hook_source: title
+      position: bottom
+      accent_rgb: [230, 60, 45]
+      hook_templates:
+        - "FIRST TRY"
+        - "NO WAY"
+        - "WAIT FOR IT"
+        - "BULLSEYE"
+
+    slot_publish_times_utc:               # these ARE the cron fire times
+      1: "16:00"                          # 12:00 PM US Eastern (US midday scroll) = 9:30 PM IST
+      2: "23:00"                          # 7:00 PM US Eastern (US evening prime)  = 4:30 AM IST

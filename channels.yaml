@@ -3,8 +3,8 @@
 
 channels:
   - id: channel_5                         # unique; used in DB, logs, secret names
-    tiktok_username: "mr..unclog8"        # no @  -- satisfying storm-drain / culvert unclogging, huge water release. 103K followers / 1.3M likes, pure TikTok-native (no YouTube channel -> no reused-content claim risk). Swapped in from the dead "Axe Factor" axe-throwing source (0 views after 5 vids); axe throwing has the lowest ceiling in the fleet.
-    youtube_channel_name: "Drain Rush"
+    tiktok_username: "fc45ac22"           # no @  -- axe / knife throwing, target trick shots
+    youtube_channel_name: "Axe Factor"
     owner_email: "dkdhaker00000095@gmail.com"
 
     google_credentials_file: "credentials/channel_5_client_secret.json"
@@ -12,16 +12,16 @@ channels:
 
     videos_per_day: 1
     description_footer: ""
-    default_tags: [unclogging, drain unclogging, satisfying, oddly satisfying, storm drain,
-                   culvert cleaning, drain cleaning, unclog, water flow, flooded road,
-                   clogged drain, asmr cleaning, satisfying cleaning, mud, debris removal,
-                   drainage, cleanup, satisfying video, before and after, so satisfying]
-    youtube_category_id: "24"             # 24 Entertainment (oddly-satisfying / broad reach)
+    default_tags: [axe throwing, knife throwing, trick shot, axe throw, bullseye,
+                   satisfying, target practice, sharp, throwing axe, hatchet,
+                   axe throwing league, backyard, skills, oddly satisfying,
+                   throwing knife, aim, lumberjack, first try]
+    youtube_category_id: "17"             # 17 Sports
     enabled: true
     max_retry_days: 7
     shorts_max_seconds: 180
     min_video_seconds: 12                 # skip clips shorter than 12s
-    max_video_seconds: 175                # keep it in Shorts range
+    max_video_seconds: 170                # keep it in Shorts range
     upload_mode: popular_only             # always pick the most-viewed unposted video
     max_download_candidates: 20
 
@@ -34,7 +34,7 @@ channels:
       fade_seconds: 0.25
       sharpen: true
       denoise: false
-      saturation: 1.06
+      saturation: 1.05
       contrast: 1.05
       loudnorm: true
       volume_gain_db: 0.0
@@ -56,12 +56,12 @@ channels:
       enabled: true
       hook_source: title
       position: bottom
-      accent_rgb: [56, 160, 220]
+      accent_rgb: [230, 60, 45]
       hook_templates:
-        - "WATCH IT DRAIN"
-        - "IT ALL RUSHED OUT"
-        - "SO SATISFYING"
-        - "FINALLY UNBLOCKED"
+        - "FIRST TRY"
+        - "NO WAY"
+        - "WAIT FOR IT"
+        - "BULLSEYE"
 
     slot_publish_times_utc:               # this IS the cron fire time
       1: "14:30"                          # 8:00 PM IST

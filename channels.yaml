@@ -3,8 +3,8 @@
 
 channels:
   - id: channel_5                         # unique; used in DB, logs, secret names
-    tiktok_username: "fc45ac22"           # no @  -- axe / knife throwing, target trick shots
-    tiktok_username_backup: "soulthrower"  # no @ -- emergency-only fallback, used automatically if the primary source runs dry or every candidate it offers fails to post. 804.5K followers, 3x World Champion knife/axe thrower, verified real + active.
+    tiktok_username: "farmgirl.brookeelwood"  # no @  -- knife sharpening + Case pocket-knife collection ("farm girl & Grandad Jim"). 44.5K followers / 3.2M likes, no YouTube found (checked directly, no matching channel in search). Promoted 2026-09-30: fc45ac22 (axe/knife throwing) was getting ~0 views for weeks; soulthrower (considered as a same-niche replacement) turned out to have an active 428K-subscriber YouTube channel posting the identical content -- disqualified, moved out entirely, not even kept as backup.
+    tiktok_username_backup: "fc45ac22"    # no @ -- emergency-only fallback (the previous primary: axe/knife throwing trick shots). Known-quantity, was already running here before.
     youtube_channel_name: "Axe Factor"
     owner_email: "dkdhaker00000095@gmail.com"
 
@@ -13,11 +13,12 @@ channels:
 
     videos_per_day: 1
     description_footer: ""
-    default_tags: [axe throwing, knife throwing, trick shot, axe throw, bullseye,
-                   satisfying, target practice, sharp, throwing axe, hatchet,
-                   axe throwing league, backyard, skills, oddly satisfying,
-                   throwing knife, aim, lumberjack, first try]
-    youtube_category_id: "17"             # 17 Sports
+    default_tags: [knife sharpening, satisfying, oddly satisfying, sharpening asmr,
+                   knife restoration, pocket knife, sharp knife, before and after,
+                   knife collection, so satisfying, blade sharpening, satisfying video,
+                   razor sharp, knife asmr, restoration, sharpening knife, edc,
+                   case knife, satisfying transformation, knife care]
+    youtube_category_id: "26"             # 26 Howto & Style (sharpening / knife care)
     enabled: true
     max_retry_days: 7
     shorts_max_seconds: 180
@@ -59,10 +60,10 @@ channels:
       position: bottom
       accent_rgb: [230, 60, 45]
       hook_templates:
-        - "FIRST TRY"
-        - "NO WAY"
-        - "WAIT FOR IT"
-        - "BULLSEYE"
+        - "SO SATISFYING"
+        - "RAZOR SHARP"
+        - "WATCH THIS TRANSFORM"
+        - "BEFORE vs AFTER"
 
     slot_publish_times_utc:               # this IS the cron fire time
       1: "14:30"                          # 8:00 PM IST

@@ -4,6 +4,7 @@
 channels:
   - id: channel_5                         # unique; used in DB, logs, secret names
     tiktok_username: "fc45ac22"           # no @  -- axe / knife throwing, target trick shots
+    tiktok_username_backup: "soulthrower"  # no @ -- emergency-only fallback, used automatically if the primary source runs dry or every candidate it offers fails to post. 804.5K followers, 3x World Champion knife/axe thrower, verified real + active.
     youtube_channel_name: "Axe Factor"
     owner_email: "dkdhaker00000095@gmail.com"
 
